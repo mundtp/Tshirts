@@ -1,0 +1,120 @@
+  * {
+      box-sizing: border-box;
+      transition: .5s all ease;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    body {
+      font-size: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .shirtContainer {
+      border-top: 3px solid #66b3ff;
+      border-right: 3px solid #66b3ff;
+      border-left: 3px solid #66b3ff;
+      padding: 20px;
+      position: relative;
+      text-align: right;
+    }
+    
+    .center {
+      margin: auto;
+      display: block;
+    }
+    
+    #backText {
+      position: absolute;
+      top: 20vh;
+      left: 32%;
+      width: 35%;
+    }
+    
+    #t {
+      opacity: 0.0
+    }
+    
+    #r {
+      text-align: right;
+    }
+    
+    .iconsize {
+      position: absolute;
+      width: 100%;
+      right: 0px;
+      bottom: 7vh;
+      border: 2px solid #66b3ff;
+      opacity: 0.0;
+    }
+    
+    .iconcolor {
+      position: absolute;
+      width: 100%;
+      right: 0px;
+      bottom: 9.5vh;
+      opacity: 0.0;
+    }
+    
+    .purchaseOptionsBar {
+      border: 1px solid #66b3ff;
+    }
+    
+    .purchaseOption {
+      border: 2px solid #66b3ff;
+      width: 20%;
+      display: inline-block;
+      padding: 6%;
+      vertical-align: top;
+      padding-bottom: 10%;
+      height: 4vh;
+      position: relative;
+    }
+    
+    .shirtDescription {
+      padding: 3%
+    }
+    
+    .leftCol {
+      display: block;
+    }
+    
+    .middleCol {
+      display: inline-block;
+      width: 100%
+    }
+    
+    .rightCol {
+      display: inline-block;
+      width: 100%;
+    }
+    
+    @media (min-width: 500px) {
+      .rightCol {
+        display: block;
+        width: 100%;
+      }
+      .leftCol,
+      .middleCol {
+        width: 50%;
+        display: inline-block
+      }}
+      @media (min-width: 768px) {
+        .rightCol,
+        .leftCol,
+        .middleCol {
+          width: 33%;
+          display: inline-block;
+        }
+      }
+ 
+        .purchaseOptionsBar > div:nth-child(3):hover > div {
+          opacity: 1.0;
+        }
+        .purchaseOptionsBar > div:nth-child(4):hover > div {
+          opacity: 1.0;
+        }
+        input[type="checkbox"]:checked+div > img#t {
+          opacity: 1.0;
